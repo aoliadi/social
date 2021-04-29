@@ -1,0 +1,25 @@
+.header {
+    max-width: 500px;
+    color: $very-dark-magenta;
+    margin: 0 auto;
+}
+ 
+.header__h1 {
+    line-height: 1.25em;
+    font-size: 3em;
+    @include weight(7);
+    
+    @media(max-width: 336px) {
+        text-align: center;
+    }
+}
+
+.header__paragraph {
+    line-height: 1.5em;
+    color: $dark-grayish-magenta;
+    @include margin(top, 0.35);
+    
+    @media(max-width: 336px) {
+        text-align: center;
+    }
+}

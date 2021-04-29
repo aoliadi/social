@@ -1,0 +1,33 @@
+.ratings__container {
+    text-align: center;
+    margin: 1.5em auto 0;
+}
+
+.ratings {
+    @extend %flex;
+    @extend %b-rad;
+    margin-bottom: 1.2em;
+    padding: 0.8em 2em;
+    max-width: 400px;
+    background-color: $light-grayish-magenta;
+    color: $very-dark-magenta;
+    
+    @media(max-width: 336px) {
+        justify-content: center;
+    }
+    
+    @media(min-width: 336px) {
+        &:nth-child(2) {
+            @include margin($val: 2.5);
+        }
+        
+        &:nth-child(3) {
+            @include margin($val: 5);
+        }
+    }
+    
+    .star-icon:last-of-type {
+        margin-right: 2em;
+    }
+}
+

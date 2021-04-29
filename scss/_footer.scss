@@ -1,0 +1,15 @@
+.attribution {
+    text-align: center;
+    background-color: $light-grayish-magenta;
+    color: $very-dark-magenta;
+    padding: 1em 0;
+    
+    a {
+        color: $soft-pink;
+        
+        &:hover {
+            text-decoration: none;
+            
+        }
+    }
+}

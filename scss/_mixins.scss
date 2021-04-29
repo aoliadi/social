@@ -1,0 +1,13 @@
+@mixin weight($val) {
+    @if ($val == 4) {
+        font-weight: $weight400;
+    } @else if($val == 5) {
+        font-weight: $weight500;
+    } @else {
+        font-weight: $weight700;
+    }
+}
+
+@mixin margin ($pos:left, $val: 1) {
+    margin-#{$pos}: 2em * $val;
+}

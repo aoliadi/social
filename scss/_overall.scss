@@ -1,0 +1,25 @@
+.overall-container {
+    @extend %flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-top {
+    @extend %flex;
+    width: 100%;
+    justify-content: space-between;
+    @include margin(bottom, 2);
+    
+    .ratings__container {
+        width: 560px;
+    }
+}
+
+.flex-bottom {
+    @extend %flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2.85em;
+}
